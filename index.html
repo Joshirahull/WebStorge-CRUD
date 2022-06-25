@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CRUD </title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/css/style.css">
+	
+		
+	<body>
+		<h2 class="bg-primary text-white p-4"> 
+			CRUD
+		</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<form id="studentForm">
+							<div class="form-group">
+								<label for="fname">FIRST NAME</label>
+								<input type="text" class="form-control" id="fname" required>
+							</div>
+							<div class="form-group">
+								<label for="lname">Last NAME</label>
+								<input type="text" class="form-control" id="lname" required>
+							</div>
+							<div class="form-group">
+								<label for="email">EMAIL</label>
+								<input type="text" class="form-control" id="email" required>
+							</div>
+							<div class="form-group">
+								<label for="contact">CONTACT</label>
+								<input type="text" class="form-control" id="contact" required>
+							</div>
+							<div class="form-group text-right">
+								<input type="submit" class="btn btn-primary" value="submit" id="submitBtn">
+								<input type="button" class="btn btn-primary d-none" value="Update" id="updateBtn">
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-8">
+						<table class="table table-bordered">
+							<thead>
+								<th>sr no </th>
+								<th> First Name</th>
+								<th> Last name</th>
+								<th> Email </th>
+								<th> contact</th>
+								<th> Edit</th>
+								<th> Delete</th>
+							</thead>
+							<tbody id="stdInfo">
+							
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
